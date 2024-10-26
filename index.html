@@ -66,7 +66,7 @@
         <h2 style="text-align: center;">The path you must follow lies under your feet.</h2>
         <h2 style="text-align: center;">Trace where you've been, turn back where you roam,</h2>
         <h2 style="text-align: center;">Only in steps past will you find your way home.</h2>
-        <h4 style="text-align: center;"> Hint: Use the center dots and you might need a map...</h4>
+        <h4 style="text-align: center;"> Hints: The center dot is necessary and you might need a map...</h4>
         <!-- <iframe class="stars" src="https://ghbtns.com/github-btn.html?user=tympanix&repo=pattern-lock-js&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe> -->
         <svg class="patternlock" id="lock" viewBox="-10 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <g class="lock-actives"></g>
@@ -120,7 +120,18 @@
     var p = new PatternLock(e, {
         onPattern: function() {
             console.log(p.getPattern())
-            if (p.getPattern() == 171398719317){
+            if (p.getPattern() == 171398719317 
+            || p.getPattern() == 221814131224822 
+            || p.getPattern() == 161287618216 
+            || p.getPattern() == 211713121123721 
+            || p.getPattern() == 231915141325923 
+            || p.getPattern() == 231915141325923 
+            || p.getPattern() == 1814109820418 
+            || p.getPattern() == 231915141325923
+            || p.getPattern() == 231915141325923
+            || p.getPattern() == 241812131422824
+            || p.getPattern() == 191378917319
+            ){
                 this.success();
                 window.location.href = 'win.html';
             }

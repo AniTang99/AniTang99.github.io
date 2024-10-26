@@ -1,5 +1,7 @@
 {
-  "dependencies": {
-    "pattern-lock-js": "^1.0.1"
-  }
+    "type": "module",
+    "dependencies": {
+        "jquery": "^3.7.1",
+        "pattern-lock-js": "^1.0.1"
+    }
 }

@@ -116,6 +116,14 @@
     <!-- endbuild -->
 
     <script type="text/javascript">
+        function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function win() {
+    await delay(1000);
+    window.location.href = 'win.html';
+}
     var e = document.getElementById('lock')
     var p = new PatternLock(e, {
         onPattern: function() {
@@ -133,7 +141,7 @@
             || p.getPattern() == 191378917319
             ){
                 this.success();
-                window.location.href = 'win.html';
+                win();
             }
         }
     });
